@@ -34,7 +34,7 @@ em strong{
     font-weight: bold;
 }
 
-/*Selector de id*/
+/*Selector de id -> #*/
 #banner{
     display: block;
     margin-left: auto;
@@ -44,13 +44,28 @@ em strong{
 #mision{
     font-size: 20px;
 }
-#diferenciales{
+.diferenciales{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    background-color: #4daa81;
+}
+.diferenciales h2{
+    background-color: #4daa81;
+}
+.diferenciales img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-
-    font-size: 20px;
+}
+#item{
+    font-style: italic;
 }
 
 /* sistema hexadecimal para colores 
