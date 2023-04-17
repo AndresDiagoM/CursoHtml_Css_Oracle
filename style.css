@@ -11,6 +11,15 @@ h1{
     padding: 10px; /*espaciamiento interno*/
     margin: 10px; /*espaciamiento externo*/
 }
+h2{
+    text-align: center;
+    background-color: #cccccc;
+    border: 10px solid #000000;
+    border-radius: 10px;
+
+    padding: 10px; /*espaciamiento interno*/
+    margin: 10px; /*espaciamiento externo*/
+}
 p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -33,6 +42,14 @@ em strong{
     width: 50%;
 }
 #mision{
+    font-size: 20px;
+}
+#diferenciales{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
     font-size: 20px;
 }
 
