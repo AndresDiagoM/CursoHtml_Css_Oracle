@@ -1,129 +1,42 @@
-body{
-    background-color: #cccccc;
-}
-.page-title{
-    text-align: center;
-
-    height: 100px;
-    font-size: 40px;
-    border-radius: 10px;
-    padding: 10px; /*espaciamiento interno*/
-    margin: 10px; /*espaciamiento externo*/
-}
-.titulo-centralizado{
-    text-align: center;
-    /*background-color: antiquewhite;*/
-    height: 100px;
-    border: 8px solid #000000;
-    border-radius: 10px;
-
-    padding: 10px; /*espaciamiento interno*/
-    margin: 10px; /*espaciamiento externo*/
-}
-#title h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: #000000;
-    text-align: center;
-    background-color: #cccccc;
-}
-#title{
-    display: flexbox;
-
-}
-.about{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-}
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #000000;
-    text-align: center;
-
-    background-color: #cccccc;
-}
-em strong{
-    color: #ff0000;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/*Selector de id -> #*/
-#banner{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-radius: 20px;
-    border: 10px solid #000000;
-}
-#info{
+.header{
+    /*display en fila*/
+    display: flex;
+    /*Colocar espacio entre logo y menu */
+    justify-content: space-between;
+    
     padding: 20px;
+    /*Colocar color de fondo*/  
+    background-color: #BBBBBB;  
+    /*Colocar color de texto*/
+    color: #ffffff;
 }
-#mision{
-    font-size: 20px;
+.header .logo {
+    /*Colocar color de fondo*/  
+    background-color: #c69999;  
+    /*Colocar color de texto*/
+    color: #ffffff;
 }
-.diferenciales{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    border-radius: 10px;
-    padding: 20px; /*espaciamiento interno*/
-    font-size: 20px;
-
-    background-color: #4daa81;
+.header .menu {
+    /*centrar verticalmente el menu*/
+    align-self: center;
 }
-.diferenciales h3{
-    background-color: #4daa81;
-    font-size: 30px;
+.header .menu li{
+    /*display en fila para menu nav hotizontal*/
+    display: inline; /*inline es que ocupen el tamaño del contenido*/
+
+    /*Colocar color de fondo*/  
+    background-color: #c6a6a6;  
+    /*Colocar color de texto*/
+    color: #ffffff;
+
+    /*Colocar espacio entre items*/
+    margin: 0 0 0 15px; /*top right bottom left*/
 }
-.diferenciales ul{
-    display: inline-block; /*para que ocupoe solo el espacio de su contenido, y poder colocar la img al lado*/
-    vertical-align: top; 
-    width: 30%;
-    margin-right: 15%;
+.header .menu nav a {
+    /*mayusculas*/
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
-.diferenciales img{
-    display: inline-block; /*inline-block permite colocar cosas una al lado de otra*/
-    border-radius: 15px;
-    width: 50%;
-}
-#item{
-    font-style: italic;
-}
-
-/* sistema hexadecimal para colores 
-    0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
-    0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
-
-    6 posiciones, 6 digitos
-    las 2 primeras son para el color rojo
-    las 2 siguientes son para el color verde
-    las 2 ultimas son para el color azul
-
-    r r g g b b
-    0 0 0 0 0 0
-    rgb(0,0,0)
-    #000000
-
-    0 es lo más tenue, f es lo más intenso
-    #ffffff es rojo, verde y azul al máximo
-
-    #ff0000 es rojo
-    #00ff00 es verde
-    #0000ff es azul
-    #ffff00 es amarillo
-    #00ffff es cian
-    #ff00ff es magenta
-
-    rgb(255,0,0) es rojo
-    rgb(0,255,0) es verde
-    rgb(0,0,255) es azul
-    rgb(255,255,0) es amarillo
-    rgb(0,255,255) es cian
-    rgb(255,0,255) es magenta
-*/
