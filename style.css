@@ -4,7 +4,7 @@
     /*Colocar espacio entre logo y menu */
     justify-content: space-between;
     
-    padding: 20px;
+    padding: 20px 0; /*top bottom*/
     /*Colocar color de fondo*/  
     background-color: #BBBBBB;  
     /*Colocar color de texto*/
@@ -12,20 +12,28 @@
 }
 .header .logo {
     /*Colocar color de fondo*/  
-    background-color: #c69999;  
+    background-color: #BBBBBB;  
     /*Colocar color de texto*/
     color: #ffffff;
+
+    position: relative;
+    margin: 0 0 0 10vw; /*top right bottom left*/
 }
 .header .menu {
     /*centrar verticalmente el menu*/
     align-self: center;
+
+    position: absolute; /*para que el menu se posicione en la parte derecha*/
+    right: 10vw; 
+    top : 15vh; 
+    
 }
 .header .menu li{
     /*display en fila para menu nav hotizontal*/
     display: inline; /*inline es que ocupen el tamaño del contenido*/
 
     /*Colocar color de fondo*/  
-    background-color: #c6a6a6;  
+    background-color: #BBBBBB;  
     /*Colocar color de texto*/
     color: #ffffff;
 
@@ -39,4 +47,17 @@
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+}
+.header .menu nav a:hover {
+    text-decoration: underline;
+    color: #caa307;
+}
+
+
+
+/** PARTE DEL MAIN
+*/
+
+.productos li{
+    display: inline-block;
 }
