@@ -1,0 +1,112 @@
+.header{
+    /*display en fila*/
+    display: flex;
+    /*Colocar espacio entre logo y menu */
+    justify-content: space-between;
+    
+    padding: 20px 0; /*top bottom*/
+    /*Colocar color de fondo*/  
+    background-color: #BBBBBB;  
+    /*Colocar color de texto*/
+    color: #ffffff;
+}
+.header .logo {
+    /*Colocar color de fondo*/  
+    background-color: #BBBBBB;  
+    /*Colocar color de texto*/
+    color: #ffffff;
+
+    position: relative;
+    margin: 0 0 0 10vw; /*top right bottom left*/
+}
+.header .menu {
+    /*centrar verticalmente el menu*/
+    align-self: center;
+
+    position: absolute; /*para que el menu se posicione en la parte derecha*/
+    right: 10vw; 
+    top : 15vh; 
+    
+}
+.header .menu li{
+    /*display en fila para menu nav hotizontal*/
+    display: inline; /*inline es que ocupen el tamaño del contenido*/
+
+    /*Colocar color de fondo*/  
+    background-color: #BBBBBB;  
+    /*Colocar color de texto*/
+    color: #ffffff;
+
+    /*Colocar espacio entre items*/
+    margin: 0 0 0 15px; /*top right bottom left*/
+}
+.header .menu nav a {
+    /*mayusculas*/
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+.header .menu nav a:hover {
+    text-decoration: underline;
+    color: #c78c19;
+}
+
+
+
+/** PARTE DEL MAIN
+*/
+.productos ul{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /* background: #BBBBBB; */
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /**para que el padding no se sume al ancho (width 30%) del elemento */
+    border-radius: 10px;
+    border: 3px solid #000000;
+}
+/*hover de li*/
+.productos li:hover{
+    border-color: #c78c19;
+}
+.productos li:active{
+    border-color: #088c19;
+}
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.productos li:hover h2{
+    font-size: 33px;
+}
+.productos .producto-descripcion{
+    font-size: 18px;
+}
+.productos .producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/** PARTE DEL FOOTER
+*/
+
+.footer{
+    text-align: center;
+    background: url(../imagenes/bg.jpg);
+    padding: 40px;
+}
+.footer .Copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
