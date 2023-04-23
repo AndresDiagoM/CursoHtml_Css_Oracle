@@ -120,6 +120,9 @@
 }
 .container .formulario .button:hover{
     background-color: #c78c19;
+    transform: scale(1.1) ;
+    /*transform: rotate(30deg)*/
+    /*Para usar 2 propiedades transform al mismo tiempo es transform: scale(1.1) rotate(70deg);*/
 }
 
 
