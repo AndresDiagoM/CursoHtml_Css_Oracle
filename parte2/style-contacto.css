@@ -57,6 +57,9 @@
 
 /** PARTE DEL MAIN
 */
+/*main{
+    width: 940px;
+}*/
 .container{
     /*display */
     display: flex; /*flex es que ocupen el tamaño del padre*/
@@ -64,7 +67,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 
     justify-content: center;
 }
@@ -75,13 +78,34 @@
 
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 40px;
     padding: 20px;
     
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+.container .formulario label, .formulario p{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 0; /*top right bottom left*/
+}
+.input-padron{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 20px 0; /*top right bottom left*/
+    padding: 10px 25px; /*top right bottom left*/
+
+    width: auto;
+}
+.container .formulario .contactado input{
+    /*hacer que los input radio esten en la misma fila que los label*/
+    display: inline;
+}
+.container .formulario .novedades {
+    margin: 20px 0;
+}
+
 
 /** PARTE DEL FOOTER
 */
@@ -95,4 +119,35 @@
     color: #ffffff;
     font-size: 13px;
     margin: 20px;
+}
+
+/** Configuración para movil - http://mobileinputtypes.com/
+*/
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .header .logo {
+        margin: 0;
+    }
+    .header .menu {
+        position: relative;
+        right: 0;
+        top: 0;
+        margin: 0;
+    }
+
+
+    .container{
+        flex-direction: column;
+    }
+    .container .formulario{
+        margin: 20px;
+    }
+    .container .formulario .contactado input{
+        display: block;
+    }
+    .container .formulario .novedades {
+        margin: 0;
+    }
 }

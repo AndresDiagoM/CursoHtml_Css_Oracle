@@ -31,23 +31,52 @@
     </header>
 
     <main>
-        <h1>Contacto</h1>
         
         <div class="container">
             <form class="formulario" action="">
                 <label for="nombre">Nombre y Apellido</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                <input type="text" class="input-padron" id="nombre" name="nombre" placeholder="Ingrese su nombre">
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Ingrese su email">
+                <input type="email" class="input-padron" id="email" name="email" placeholder="Ingrese su email">
 
                 <label for="telefono">Telefono</label>
-                <input type="telefono" id="telefono" name="telefono" placeholder="Ingrese su telefono">
+                <input type="tel" class="input-padron" id="telefono" name="telefono" placeholder="Ingrese su telefono">
 
                 <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
-                
-                <input class="buton" type="submit" value="Enviar">
+                <textarea name="mensaje" class="input-padron" id="mensaje" cols="70" rows="10" placeholder="Ingrese su mensaje"></textarea>
+
+                <div class="contactado">
+                    <p class="pregunta" id="pregunta">¿Como desea ser contactado?</p>
+
+                    <label for="radio">
+                        <input type="radio" name="" id="radio" value=""> Email
+                    </label>
+
+                    <label for="telefono">
+                        <input type="radio" name="" id="telefono" value=""> Telefono
+                    </label>
+
+                    <label for="whatsapp">
+                        <input type="radio" name="" id="whatsapp" value=""> Whatsapp
+                    </label>
+                </div>
+
+                <div class="Horario" >
+                    <p class="pregunta">¿En que horario prefiere ser atendido?</p>
+                    <select name="Horario" id="Horario-select">
+                        <option value="Horario0">Mañana</option>
+                        <option value="Horario1">Tarde</option>
+                        <option value="Horario2">Noche</option>
+                    </select>
+                </div>
+
+                <label class="novedades">
+                    <input type="checkbox" name="novedades" id="novedades" value="novedades">
+                    ¿Le gustaria recibir novedades de la barberia?
+                </label>
+
+                <input class="button" type="submit" value="Enviar">
             </form>
         </div>
     </main>
