@@ -46,8 +46,8 @@
                 <label for="mensaje">Mensaje</label>
                 <textarea name="mensaje" class="input-padron" id="mensaje" cols="70" rows="10" placeholder="Ingrese su mensaje" required></textarea>
 
-                <div class="contactado">
-                    <p class="pregunta" id="pregunta">¿Como desea ser contactado?</p>
+                <fieldset class="contactado"> <!--Fieldset es para agrupar elementos de un mismo grupo-->
+                    <legend class="pregunta" id="pregunta">¿Como desea ser contactado?</legend>
 
                     <label for="radio">
                         <input type="radio" name="" id="radio" value=""> Email
@@ -58,21 +58,21 @@
                     </label>
 
                     <label for="whatsapp">
-                        <input type="radio" name="" id="whatsapp" value=""> Whatsapp
+                        <input type="radio" name="" id="whatsapp" value="" checked> Whatsapp
                     </label>
-                </div>
+                </fieldset>
 
-                <div class="Horario" >
-                    <p class="pregunta">¿En que horario prefiere ser atendido?</p>
+                <fieldset class="Horario" >
+                    <legend class="pregunta">¿En que horario prefiere ser atendido?</legend>
                     <select name="Horario" id="Horario-select" required>
                         <option value="Horario0">Mañana</option>
                         <option value="Horario1">Tarde</option>
                         <option value="Horario2">Noche</option>
                     </select>
-                </div>
+                </fieldset>
 
                 <label class="novedades">
-                    <input type="checkbox" name="novedades" id="novedades" value="novedades">
+                    <input type="checkbox" name="novedades" id="novedades" value="novedades" checked>
                     ¿Le gustaria recibir novedades de la barberia?
                 </label>
 
