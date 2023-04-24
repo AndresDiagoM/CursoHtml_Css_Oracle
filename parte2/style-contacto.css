@@ -61,8 +61,10 @@
     width: 940px;
 }*/
 .container{
-    /*display */
+    /*display para todo este en columna */
     display: flex; /*flex es que ocupen el tamaño del padre*/
+    /*Contenido en una columna*/
+    flex-direction: column;
 
     width: 100%;
     max-width: 1200px;
@@ -123,6 +125,54 @@
     transform: scale(1.1) ;
     /*transform: rotate(30deg)*/
     /*Para usar 2 propiedades transform al mismo tiempo es transform: scale(1.1) rotate(70deg);*/
+}
+
+/*Contendor de la tabla de Horario*/
+.container .horario{
+    width: 100%;
+    max-width: 400px;
+    margin: 40px;
+    padding: 20px;
+    
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+    justify-content: center;
+    text-align: center;
+}
+.container .horario .title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 20px 0; /*top right bottom left*/
+}
+.container .horario .table-schedule{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+.container .horario .table-schedule th{
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+
+    background-color: #eba312;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+.container .horario .table-schedule td{
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+.container .horario .table-schedule tr:nth-child(odd){
+    background-color: rgb(157, 157, 157);
 }
 
 
