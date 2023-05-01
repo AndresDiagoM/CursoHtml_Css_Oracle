@@ -1,91 +1,154 @@
-body{
+.header{
+    /*display en fila*/
+    display: flex;
+    /*Colocar espacio entre logo y menu */
+    justify-content: space-between;
+    
+    padding: 20px 0; /*top bottom*/
+    /*Colocar color de fondo*/  
+    background-color: #BBBBBB;  
+    /*Colocar color de texto*/
+    color: #ffffff;
+}
+.header .logo {
+    /*Colocar color de fondo*/  
+    background-color: #BBBBBB;  
+    /*Colocar color de texto*/
+    color: #ffffff;
+
+    position: relative;
+    margin: 0 0 0 10vw; /*top right bottom left*/
+}
+.header .menu {
+    /*centrar verticalmente el menu*/
+    align-self: center;
+
+    position: absolute; /*para que el menu se posicione en la parte derecha*/
+    right: 10vw; 
+    top : 15vh; 
+    
+}
+.header .menu li{
+    /*display en fila para menu nav hotizontal*/
+    display: inline; /*inline es que ocupen el tamaño del contenido*/
+
+    /*Colocar color de fondo*/  
+    background-color: #BBBBBB;  
+    /*Colocar color de texto*/
+    color: #ffffff;
+
+    /*Colocar espacio entre items*/
+    margin: 0 0 0 15px; /*top right bottom left*/
+}
+.header .menu nav a {
+    /*mayusculas*/
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+.header .menu nav a:hover {
+    text-decoration: underline;
+    color: #c78c19;
+}
+
+
+
+/** PARTE DEL MAIN*/
+.container{
     background-color: #cccccc;
-}
-.page-title{
-    text-align: center;
+    /*display para todo este en columna */
+    display: flex; /*flex es que ocupen el tamaño del padre*/
+    /*Contenido en una columna*/
+    flex-direction: column;
 
-    height: 100px;
-    font-size: 40px;
-    border-radius: 10px;
-    padding: 10px; /*espaciamiento interno*/
-    margin: 10px; /*espaciamiento externo*/
-}
-.titulo-centralizado{
-    text-align: center;
-    /*background-color: antiquewhite;*/
-    height: 100px;
-    border: 8px solid #000000;
-    border-radius: 10px;
+    width: 100%;
 
-    padding: 10px; /*espaciamiento interno*/
-    margin: 10px; /*espaciamiento externo*/
-}
-#title h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: #000000;
+    justify-content: center;
     text-align: center;
-    background-color: #cccccc;
 }
-#title{
-    display: flexbox;
-
-}
-.about{
+#main-image{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
-p{
+/*Selector de id -> #*/
+#banner{
+    display: flex;
+    width: 100%;
+}
+
+.titulo-main{
+    /*  border: 8px solid #000000; 
+    border-radius: 10px; */
+
+    display: block;
+    margin: 1em 0 1em 0;
+    width: 100%;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#info{
+    padding: 20px;
+}
+.info-image{
+    /*permitir que el texto redonde la imagen*/
+    float: left;
+    margin: 0 20px 20px 5em; /*top right bottom left*/
+    border-radius: 10px;
+    width: 120px;
+
+}
+.main-p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #000000;
-    text-align: center;
+    text-align: left;
+
+    margin: 0 0 1em;
 
     background-color: #cccccc;
 }
-em strong{
+#info em strong{
     color: #ff0000;
     font-size: 20px;
     font-weight: bold;
 }
-
-/*Selector de id -> #*/
-#banner{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-radius: 20px;
-    border: 10px solid #000000;
-}
-#info{
-    padding: 20px;
-}
 #mision{
     font-size: 20px;
 }
+
+
 .diferenciales{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 3em auto 1em auto;
     width: 80%;
     border-radius: 10px;
     padding: 20px; /*espaciamiento interno*/
     font-size: 20px;
 
-    background-color: #4daa81;
+    background-color: #6d7c75;
 }
 .diferenciales h3{
-    background-color: #4daa81;
+    background-color: #6d7c75;
     font-size: 30px;
+    margin: 1em 0 1em 0;
 }
 .diferenciales ul{
     display: inline-block; /*para que ocupoe solo el espacio de su contenido, y poder colocar la img al lado*/
     vertical-align: top; 
     width: 30%;
     margin-right: 15%;
+    margin-top: 1em;
+}
+.diferenciales li{
+    margin: 0 0 1em 0;
+    color: #000000;
+    font-size: 20px;
 }
 .diferenciales img{
     display: inline-block; /*inline-block permite colocar cosas una al lado de otra*/
@@ -95,6 +158,20 @@ em strong{
 #item{
     font-style: italic;
 }
+
+
+/** PARTE DEL FOOTER*/
+.footer{
+    text-align: center;
+    background: url(../imagenes/bg.jpg);
+    padding: 40px;
+}
+.footer .Copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
 
 /* sistema hexadecimal para colores 
     0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
