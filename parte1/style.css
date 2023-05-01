@@ -84,23 +84,23 @@ body {
     width: 100%;
 }
 
-.titulo-main{
-    /*  border: 8px solid #000000; 
-    border-radius: 10px; */
-
-    display: block;
-    margin: 1em 0 1em 0;
-    width: 100%;
-
-    font-size: 30px;
-    font-weight: bold;
-}
-
 #info{
     padding: 20px;
     /*Colocar color de fondo con degradado*/
     background: linear-gradient( #FEFEFE, #888888);
 }
+.titulo-info{
+    display: block;
+    margin: 1em 0 1em 0;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.titulo-info::first-letter{ /*::first-letter es un pseudo elemento*/
+    font-size: 40px;
+    color: #ff0000;
+}
+
 .info-image{
     /*permitir que el texto redonde la imagen*/
     float: left;
@@ -180,6 +180,11 @@ body {
 .item:first-child{
     font-weight: bold;
     font-size: 22px;
+}
+.item:before{
+    content: "⭐";
+    margin-right: 10px;
+    color: #000000;
 }
 .diferenciales .diferencialesImg{
     display: inline-block; /*inline-block permite colocar cosas una al lado de otra*/
