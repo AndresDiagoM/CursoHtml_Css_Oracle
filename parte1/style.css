@@ -98,6 +98,8 @@ body {
 
 #info{
     padding: 20px;
+    /*Colocar color de fondo con degradado*/
+    background: linear-gradient( #FEFEFE, #888888);
 }
 .info-image{
     /*permitir que el texto redonde la imagen*/
@@ -107,14 +109,14 @@ body {
     width: 120px;
 
 }
-.main-p {
+.info-p {
     font-size: 18px;
     color: #000000;
     text-align: left;
 
     margin: 0 0 1em;
-
-    background-color: #cccccc;
+    /*fondo transparente de los p*/
+    background-color: transparent;
 }
 #info em strong{
     color: #ff0000;
@@ -127,7 +129,8 @@ body {
 
 .mapa {
     padding: 3em 0; /*espaciamiento interno*/
-
+    /*Fondo con degradado*/
+    /* background: linear-gradient(to right, #c78c19, #ffffff); */
 }
 .mapa h3 {
     font-size: 30px;
@@ -148,10 +151,10 @@ body {
     padding: 20px; /*espaciamiento interno*/
     font-size: 20px;
 
-    background-color: #6d7c75;
+    background-color: #888888;
 }
 .diferenciales h3{
-    background-color: #6d7c75;
+    background-color: #888888;
     font-size: 30px;
     margin: 1em 0 1em 0;
 }
@@ -159,14 +162,14 @@ body {
     display: inline-block; /*inline-block permite colocar cosas una al lado de otra*/
     width: 100%;
     margin: 0 auto 0 auto;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .diferenciales .lista-diferenciales{
     display: inline-block; /*para que ocupo solo el espacio de su contenido, y poder colocar la img al lado*/
     vertical-align: top; 
     width: 40%;
     margin: 0 0 0 0;
-    background-color: #c78c19;
+    /* background-color: #c78c19; */
 }
 .diferenciales .item{
     font-style: italic;
