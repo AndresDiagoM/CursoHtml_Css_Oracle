@@ -118,6 +118,13 @@ body {
     /*fondo transparente de los p*/
     background-color: transparent;
 }
+/*#info img + p { + es un selector de hermano adyacente
+    margin-top: 0;
+    background: red;
+}
+main > #info { > es un selector de hijo directo
+    background: blue;
+}*/
 #info em strong{
     color: #ff0000;
     font-size: 20px;
