@@ -192,31 +192,73 @@
 
 /** Configuración para movil - http://mobileinputtypes.com/
 */
-@media screen and (max-width: 768px) {
+/*DISEÑO RESPONSIVO*/
+@media screen and (max-width: 1000px) { /*max-width: 768px -> cuando el ancho de la pantalla sea menor a 768px*/
     .header {
-        flex-direction: column;
+        display: inline-block;
+        width: 100%;
+        /*Centrar contenido*/
+        align-items: center;
     }
     .header .logo {
-        margin: 0;
+        display: block;
+        text-align: center;
+        width: 40%;
+        /* background: yellowgreen; */
+        margin: 0 auto 0 0;
     }
-    .header .menu {
-        position: relative;
-        right: 0;
+    .header .logo > img {
+        width: 60%;
+    }
+    .header .menu{
+        display: block;
+        text-align: center;
+        /* background: rgb(205, 122, 50); */
+        /*colocar el menu en la parte superior*/
+        position: absolute;
         top: 0;
-        margin: 0;
     }
-
+    .header .menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 3em auto 0 1em;
+    }
+    .header .menu ul li {
+        margin: 0 0 1em 0;
+    }
+    .header .menu ul li a{
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+    }
 
     .container{
-        flex-direction: column;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
     }
     .container .formulario{
-        margin: 20px;
-    }
-    .container .formulario .contactado input{
-        display: block;
-    }
-    .container .formulario .novedades {
+        width: 90%;
         margin: 0;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    .container .formulario .input-padron{
+        width: auto;
+    }
+    .container .formulario .button{
+        width: auto;
+    }
+
+    .container .horario{
+        width: 90%;
+        margin: 1em auto 0 0;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
     }
 }
