@@ -95,6 +95,7 @@ body {
     width: 100%;
     font-size: 30px;
     font-weight: bold;
+    text-shadow: 2px 2px 2px #000000;
 }
 .titulo-info::first-letter{ /*::first-letter es un pseudo elemento*/
     font-size: 40px;
@@ -191,6 +192,9 @@ body {
     display: inline-block; /*inline-block permite colocar cosas una al lado de otra*/
     border-radius: 15px;
     width: 50%;
+
+    box-shadow: 10px 10px 10px 5px #000000; /*top rigth difuminado sombra color*/
+
 }
 .diferenciales .diferencialesImg:hover{
     opacity: 0.5;
