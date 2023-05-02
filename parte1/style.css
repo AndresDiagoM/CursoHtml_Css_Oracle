@@ -192,6 +192,10 @@ body {
     border-radius: 15px;
     width: 50%;
 }
+.diferenciales .diferencialesImg:hover{
+    opacity: 0.5;
+    transition: 400ms;
+}
 
 
 .video {
@@ -252,13 +256,21 @@ body {
     rgb(255,0,255) es magenta
 */
 
-/*#info img + p { + es un selector de hermano adyacente
-    margin-top: 0;
-    background: red;
-}
-main > #info { > es un selector de hijo directo
-    background: blue;
-}*/
+/*  SELECTORES AVANZADOS
+    #info img + p { + es un selector de hermano adyacente
+        margin-top: 0;
+        background: red;
+    }
+    main > #info { > es un selector de hijo directo
+        background: blue;
+    }
+    img ~ p { ~ es un selector de hermano general, selecciona todos los hermanos que estan despues
+        background: green;
+    }
+    main p:not(#missao) { :not() es un selector de negacion, selecciona todos los p que no sean #missao
+        background: yellow;
+    }
+*/
 
 /*Calculos con css*/
 /*
